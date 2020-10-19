@@ -1,0 +1,322 @@
+             @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+             @import url("https://fonts.googleapis.com/css?family=Rufina:400,700&display=swap");
+             /*  ***************************** Common CSS Start *************/
+             
+             * {
+                 margin: 0;
+                 padding: 0;
+                 -webkit-box-sizing: border-box;
+                 box-sizing: border-box;
+             }
+             
+              :root {
+                 --ff-primary: 'Roboto', sans-serif;
+                 --ff-secondary: 'Rufina', serif;
+                 --fw-reg: 300;
+                 --fw-bold: 900;
+                 --clr-light: #fff;
+                 --clr-light2: #fcf5ee;
+                 --clr-dark0: #263a41;
+                 --clr-dark: #6c6c6f;
+                 --clr-dark2: #888;
+                 --clr-darkp: #555;
+                 --clr-darksec: #1e2528;
+                 --clr-accent: #ff817e;
+                 --fs-h1: 3rem;
+                 --fs-h2: 2.25rem;
+                 --fs-h3: 1.25rem;
+                 --fs-body: 1rem;
+                 --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25), 0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
+             }
+             
+             @media (min-width: 800px) {
+                  :root {
+                     --fs-h1: 4.5rem;
+                     --fs-h2: 3.75rem;
+                     --fs-h3: 1.5rem;
+                     --fs-body: 1.125rem;
+                 }
+             }
+             
+             body {
+                 color: var(--clr-dark);
+                 background-color: var(--clr-light);
+                 font-family: var( --ff-primary);
+                 font-weight: 300;
+                 font-size: 15px;
+                 line-height: 27px;
+             }
+             
+             a {
+                 -webkit-transition: all 300ms ease-in-out;
+                 -o-transition: all 300ms ease-in-out;
+                 transition: all 300ms ease-in-out;
+             }
+             
+             a:hover,
+             a:focus {
+                 text-decoration: none;
+                 outline: 0px;
+             }
+             
+             h1,
+             h2,
+             h3,
+             h4,
+             h5,
+             h6 {
+                 font-family: var(--ff-secondary);
+                 font-weight: 700;
+             }
+             
+             img {
+                 display: block;
+                 width: 100%;
+                 height: auto;
+             }
+             
+             ul {
+                 margin: 0;
+                 padding: 0;
+                 list-style: none;
+             }
+             
+             figure {
+                 margin: 0;
+             }
+             
+             section {
+                 display: block;
+                 position: relative;
+                 padding: 50px 0;
+                 width: 100%;
+             }
+             /*  ***************************** Common CSS End *************/
+             /*  ***************************** Header Start *************/
+             
+             .header {
+                 position: relative;
+             }
+             
+             .header.abs-header {
+                 position: absolute;
+                 top: 0;
+                 left: 0;
+                 width: 100%;
+                 z-index: 1;
+             }
+             
+             .logo a {
+                 color: var(--clr-accent);
+             }
+             
+             .col-md-9 {
+                 margin: auto 0;
+             }
+             
+             .header-row {
+                 margin-top: 2rem;
+             }
+             
+             .primary-menu {
+                 position: relative;
+             }
+             
+             .primary-menu .mobile-menu {
+                 display: none;
+             }
+             
+             .primary-menu li a {
+                 color: var(--clr-dark0);
+                 display: block;
+                 font-size: 14px;
+                 font-weight: 500;
+                 text-transform: uppercase;
+                 padding: 0 20px;
+             }
+             
+             .primary-menu li a:hover {
+                 color: var(--clr-accent);
+             }
+             
+             @media screen and (max-width: 767px) {
+                 .primary-menu .mobile-menu {
+                     color: var(--clr-accent);
+                     display: block;
+                     font-size: 18px;
+                     position: absolute;
+                     right: 0;
+                     top: -30px;
+                 }
+                 .primary-menu ul {
+                     background-color: var(--clr-light2);
+                     display: none;
+                     text-align: center;
+                     padding: 10px 0;
+                 }
+                 .primary-menu li a {
+                     padding: 10px 15px;
+                 }
+             }
+             
+             @media screen and (min-width: 768px) {
+                 .primary-menu li {
+                     display: inline-block;
+                 }
+             }
+             /*  ***************************** Header End *************/
+             /*  ***************************** About Me start*************/
+             
+             .about-me-barnner {
+                 margin: 150px 0;
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+                 background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)), url(/images/backg.jpg) center no-repeat;
+                 background-size: cover;
+                 width: 100%;
+                 height: 45vh;
+             }
+             
+             .underline {
+                 width: 12rem;
+                 height: 0.3rem;
+                 background-color: var(--clr-accent);
+                 margin: 40px 0;
+             }
+             
+             .about-me h1 {
+                 color: var(--clr-light2);
+             }
+             
+             .my-story {
+                 display: flex;
+                 flex-direction: column;
+                 justify-content: center;
+                 align-items: center;
+             }
+             
+             .my-info {
+                 margin-top: 100px;
+                 width: 90%;
+                 display: flex;
+                 justify-content: center;
+                 justify-content: space-around;
+             }
+             
+             .my-info-text {
+                 width: 40%;
+                 margin-top: 30px;
+             }
+             
+             .my-info-text h4 {
+                 margin-bottom: 25px;
+             }
+             
+             .carousel {
+                 width: 55%;
+             }
+             
+             .carousel img {
+                 height: 44rem;
+             }
+             
+             @media screen and (max-width: 867px) {
+                 html {
+                     font-size: 80%;
+                 }
+                 .my-info {
+                     flex-direction: column;
+                     align-items: center;
+                     text-align: center;
+                     width: 100%;
+                 }
+                 .my-info-text {
+                     width: 80%;
+                 }
+                 .carousel {
+                     width: 70%;
+                 }
+             }
+             
+             @media screen and (max-width: 500px) {
+                 html {
+                     font-size: 65%;
+                 }
+             }
+             /*  ***************************** About Me End*************/
+             /*  ***************************** Footer Section Start *************/
+             
+             .footer {
+                 background-color: #fff9f8;
+                 padding: 80px 0 60px;
+             }
+             
+             .footer .foo-logo {
+                 margin: 0 auto;
+             }
+             
+             .footer .foo-nav {
+                 position: relative;
+                 margin: 30px 0;
+             }
+             
+             .footer .foo-nav li a {
+                 color: var(--clr-dark1);
+                 display: block;
+                 font-size: 14px;
+                 font-weight: 500;
+                 text-transform: uppercase;
+                 padding: 0 20px;
+             }
+             
+             .footer .foo-nav li a:hover {
+                 color: var(--clr-accent);
+             }
+             
+             .footer .foo-social {
+                 margin-bottom: 30px;
+             }
+             
+             .footer .foo-social a {
+                 border-right: 1px solid #b1b4bb;
+                 color: #3a414e;
+                 display: inline-block;
+                 font-size: 14px;
+                 line-height: .5;
+                 padding: 0 10px;
+             }
+             
+             .footer .foo-social a:hover {
+                 color: var(--clr-accent);
+             }
+             
+             .footer .copyright {
+                 color: var(--clr-dark2);
+                 font-size: 13px;
+                 text-transform: uppercase;
+                 margin-bottom: 0;
+             }
+             
+             .footer .copyright a {
+                 color: var(--clr-accent);
+             }
+             
+             @media screen and (min-width: 768px) {
+                 .footer .foo-nav li {
+                     display: inline-block;
+                 }
+             }
+             
+             @media screen and (max-width: 767px) {
+                 .footer .foo-nav ul {
+                     background-color: var(--clr-light2);
+                     display: none;
+                     text-align: center;
+                     padding: 10px 0;
+                 }
+                 .footer .foo-nav li a {
+                     padding: 10px 15px;
+                 }
+             }
+             /*  ***************************** Footer Section End *************/
