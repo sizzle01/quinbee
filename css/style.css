@@ -355,6 +355,9 @@ section {
     .sec-heading .sec-title {
         font-size: 33px;
     }
+    .sec-heading img {
+        visibility: hidden;
+    }
 }
 
 
@@ -378,6 +381,7 @@ section {
 }
 
 .service-card-wrapper {
+    flex-wrap: wrap;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -389,6 +393,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 30px;
 }
 
 .service-card img {
@@ -398,6 +403,11 @@ section {
 
 .service-list-desc {
     width: 250px;
+}
+
+.service-list-desc p {
+    width: 190px;
+    margin: 0 auto;
 }
 
 .service .service-caro {

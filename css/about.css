@@ -96,6 +96,22 @@
  
  .header {
      position: relative;
+     display: flex;
+ }
+ 
+ .header .foo-social {
+     position: absolute;
+     right: 50px;
+     top: 40px;
+ }
+ 
+ .header .foo-social a {
+     border-right: 1px solid #b1b4bb;
+     color: #3a414e;
+     display: inline-block;
+     font-size: 14px;
+     line-height: .5;
+     padding: 0 10px;
  }
  
  .header.abs-header {
@@ -168,7 +184,7 @@
  /*  ***************************** About Me start*************/
  
  .about-me-barnner {
-     margin: 150px 0;
+     margin: 100px 0 0 0;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -197,7 +213,7 @@
  }
  
  .my-info {
-     margin-top: 100px;
+     margin-top: 70px;
      width: 90%;
      display: flex;
      justify-content: center;
