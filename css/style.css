@@ -111,8 +111,8 @@ section {
     z-index: 1;
 }
 
-.logo a {
-    color: var(--clr-accent);
+.logo img {
+    width: 130px;
 }
 
 .col-md-9 {
@@ -175,6 +175,10 @@ section {
 
 
 /*  ***************************** Banner Section Start *************/
+
+.banner-content {
+    margin-top: 40px;
+}
 
 .banner {
     background: url(../images/leaf.png) no-repeat left center/12.5%;
@@ -245,6 +249,9 @@ section {
 }
 
 @media screen and (max-width: 1199px) {
+    .logo img {
+        width: 110px;
+    }
     .banner {
         padding-top: 15%;
     }
