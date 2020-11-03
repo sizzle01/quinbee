@@ -160,6 +160,12 @@ section {
     color: var(--clr-accent);
 }
 
+@media screen and (max-width: 993px) {
+    .header .foo-social {
+        visibility: hidden;
+    }
+}
+
 @media screen and (max-width: 767px) {
     .primary-menu .mobile-menu {
         color: var(--clr-accent);
@@ -192,7 +198,7 @@ section {
 
 /*  ***************************** About Me start*************/
 
-.about-me-barnner {
+.service-barnner {
     margin: 100px 0 0 0;
     display: flex;
     justify-content: center;
