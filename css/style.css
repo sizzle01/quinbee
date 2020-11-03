@@ -189,9 +189,10 @@ section {
     color: var(--clr-accent);
     display: block;
     font-family: var( --ff-secondary);
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     margin-bottom: 20px;
+    font-size: 23px;
 }
 
 .banner h2 {
@@ -252,6 +253,9 @@ section {
     .logo img {
         width: 110px;
     }
+    .banner span {
+        font-size: 20px;
+    }
     .banner {
         padding-top: 15%;
     }
@@ -262,6 +266,9 @@ section {
 }
 
 @media screen and (max-width: 676px) {
+    .banner span {
+        margin-top: 5px;
+    }
     .banner {
         padding-top: 130px;
     }
