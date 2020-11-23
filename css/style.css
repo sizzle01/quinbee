@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
+    @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Rufina:400,700&display=swap");
 
 /*  ***************************** Common CSS Start *************/
@@ -797,103 +797,83 @@ section {
     .appointment .appointment-wrap .appointment-form form {
         margin: 0 auto;
     }
-}
-
-@media screen and (min-width: 480px) {
-    .appointment-form .form-field.half-width {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
+    @media screen and (min-width: 480px) {
+        .appointment-form .form-field.half-width {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+        }
+        .appointment-form .form-field.half-width input,
+        .appointment-form .form-field.half-width .selec-field {
+            width: 49%;
+        }
     }
-    .appointment-form .form-field.half-width input,
-    .appointment-form .form-field.half-width .selec-field {
-        width: 49%;
+    /*  ***************************** Appointment Section End *************/
+    /*  ***************************** Footer Section Start *************/
+    .footer {
+        background-color: rgb(255, 224, 229);
+        padding: 80px 0 60px;
     }
-}
-
-
-/*  ***************************** Appointment Section End *************/
-
-
-/*  ***************************** Footer Section Start *************/
-
-.footer {
-    background-color: rgb(255, 224, 229);
-    padding: 80px 0 60px;
-}
-
-.footer .foo-logo {
-    margin: 0 auto;
-}
-
-.footer .foo-nav {
-    position: relative;
-    margin: 30px 0;
-}
-
-.footer .foo-nav li a {
-    color: var(--clr-dark1);
-    display: block;
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: uppercase;
-    padding: 0 20px;
-}
-
-.footer .foo-nav li a:hover {
-    color: var(--clr-accent);
-}
-
-.footer .foo-social {
-    margin-bottom: 30px;
-}
-
-.footer .foo-social a {
-    border-right: 1px solid #b1b4bb;
-    color: #3a414e;
-    display: inline-block;
-    font-size: 14px;
-    line-height: .5;
-    padding: 0 10px;
-}
-
-.footer .foo-social a:hover {
-    color: var(--clr-accent);
-}
-
-.footer .copyright {
-    color: var(--clr-dark2);
-    font-size: 13px;
-    text-transform: uppercase;
-    margin-bottom: 0;
-}
-
-.footer .copyright a {
-    color: var(--clr-accent);
-}
-
-@media screen and (min-width: 768px) {
-    .footer .foo-nav li {
-        display: inline-block;
+    .footer .foo-logo {
+        margin: 0 auto;
     }
-}
-
-@media screen and (max-width: 767px) {
-    .footer .foo-nav ul {
-        background-color: var(--clr-light2);
-        display: none;
-        text-align: center;
-        padding: 10px 0;
+    .footer .foo-nav {
+        position: relative;
+        margin: 30px 0;
     }
     .footer .foo-nav li a {
-        padding: 10px 15px;
+        color: var(--clr-dark1);
+        display: block;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding: 0 20px;
     }
-}
-
-
-/*  ***************************** Footer Section End *************/
+    .footer .foo-nav li a:hover {
+        color: var(--clr-accent);
+    }
+    .footer .foo-social {
+        margin-bottom: 30px;
+    }
+    .footer .foo-social a {
+        border-right: 1px solid #b1b4bb;
+        color: #3a414e;
+        display: inline-block;
+        font-size: 14px;
+        line-height: .5;
+        padding: 0 10px;
+    }
+    .footer .foo-social a:hover {
+        color: var(--clr-accent);
+    }
+    .footer .copyright {
+        color: var(--clr-dark2);
+        font-size: 13px;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+    .footer .copyright a {
+        color: var(--clr-accent);
+    }
+    @media screen and (min-width: 768px) {
+        .footer .foo-nav li {
+            display: inline-block;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .footer .foo-nav ul {
+            background-color: var(--clr-light2);
+            display: none;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .footer .foo-nav li a {
+            padding: 10px 15px;
+        }
+    }
+    /*  ***************************** Footer Section End *************/

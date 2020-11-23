@@ -48,6 +48,12 @@ body {
     line-height: 27px;
 }
 
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 a {
     -webkit-transition: all 300ms ease-in-out;
     -o-transition: all 300ms ease-in-out;

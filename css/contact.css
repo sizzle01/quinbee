@@ -48,6 +48,12 @@ body {
     line-height: 27px;
 }
 
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 a {
     -webkit-transition: all 300ms ease-in-out;
     -o-transition: all 300ms ease-in-out;
@@ -250,6 +256,91 @@ section {
 .appointment .v2 {
     padding-bottom: 0;
     border-bottom: 1px solid #fdd5d5;
+}
+
+.cont-add {}
+
+.googlemap {
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.map-wrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.cont-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*contact details*/
+
+.details {
+    background: var(--clr-accent);
+    margin: 3rem;
+    width: 50%;
+    height: 100%;
+}
+
+::placeholder {
+    color: #999 !important;
+}
+
+.follow {
+    background: #fff;
+    padding: 17px;
+    margin: 15px;
+    font-size: 1.6rem;
+}
+
+.follow i {
+    color: #777;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.contact-info .fab {
+    margin: 10px;
+    color: #777;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 650px) {
+    .details {
+        margin: 3rem;
+        width: 50%;
+        height: 100%;
+    }
+     ::placeholder {
+        color: #999 !important;
+    }
+    .follow {
+        background: #fff;
+        padding: 17px;
+        margin: 15px;
+        font-size: 1.3rem;
+    }
+    .follow i {
+        color: #777;
+        font-size: 1.3rem;
+        padding: 0.7rem;
+    }
+    .contact-info .fab {
+        margin: 7px;
+        color: #777;
+        font-weight: bold;
+    }
+}
+
+
+/*contact details*/
+
+.appointment-wrap {
+    margin-top: 80px;
 }
 
 .appointment .appointment-wrap {
